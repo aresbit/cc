@@ -1,5 +1,9 @@
 # 用法
 
+## 面对对象
+在 C 等语言中，面向对象的编程功能通常通过将结构嵌入为其他结构的字段以及使用不安全的 container_of() 宏执行向下转换操作来模仿。 
+ container_of() 宏 取结构体成员的父类型地址，等于对象的继承机制。
+
 ## 打印系统的include.
 
 echo "$(gcc -print-sysroot)/include"
