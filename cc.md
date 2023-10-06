@@ -1,4 +1,23 @@
 # 用法
+## C 语言模块化
+
+在 C 中，大多数声明结构类型的代码都遵循以下模式：
+
+```c
+/* struct forward-declaration */
+typedef struct T T ;
+
+/* struct definition */
+typedef struct T
+{
+   /* etc. */
+} T ;
+```
+
+上面的代码同时做了两件事
+
+- 结构声明
+- 然后在正常命名空间中为结构名称别名
 
 ## 面对对象
 在 C 等语言中，面向对象的编程功能通常通过将结构嵌入为其他结构的字段以及使用不安全的 container_of() 宏执行向下转换操作来模仿。 
